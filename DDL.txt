@@ -1,0 +1,41 @@
+- Data Definition Language
+데이터베이스의 구조(테이블, 스키마 등)를 정의하거나 변경할 때 사용됩니다.
+
+
+1. CREATE
+- CREATE DATABASE <database-name>;
+- CREATE TABLE <table-name>;
+
+2. DROP
+- DROP DATABASE <database-name>;
+- DROP TABLE <table-name>; -- 전체(데이터+구조) 지움 
+
+3. TRUNCATE
+- DROP TABLE <table-name>; -- 데이터만 지움
+
+4. ALTER
+
+
+-- Schema
+
+1. CREATE
+- CREATE DATABASE <database-name>;
+
+2. DROP
+- DROP DATABASE <database-name>;
+
+-- Table
+
+1. CREATE
+CREATE TABLE <table-name>(
+    <column-name> <data-types>,
+    <column-name> <data-types>,
+    <column-name> <data-types>
+)
+
+2. DROP
+DROP TABLE <table-name>; -- 전체 지움
+
+3. TRUNCATE
+TRUNCATE TABLE <table-name>; -- 데이터만 지움
+

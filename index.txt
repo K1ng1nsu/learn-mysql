@@ -1,0 +1,30 @@
+DDL = {
+    CREATE DATABASE <database-name>;
+    CREATE TABLE <table-name>
+
+    DROP DATABASE <database-name>;
+    DROP TABLE <table-name>;
+
+    TRUNCATE TABLE <table-name>;
+
+}
+
+DML = {
+    INSERT INTO 
+    <table-name> 
+    [(<column-name>, <column-name>)]
+    VALUES 
+    (<value>, <value>);
+
+    SELECT * FROM <table-name>;
+    
+
+}
+
+DCL = {
+
+}
+
+TCL = {
+
+}

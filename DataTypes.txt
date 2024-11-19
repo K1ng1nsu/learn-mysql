@@ -1,0 +1,16 @@
+-Text
+-Number
+-DateTime
+
+
+
+
+------Text
+-varchar
+
+------Number
+-int
+
+------
+------
+------

@@ -1,0 +1,37 @@
+- Data Manipulation Language
+데이터베이스의 데이터를 조회, 삽입, 수정, 삭제할 때 사용됩니다.
+
+1. INSERT
+2. SELECT
+3. UPDATE
+4. DELETE
+
+---
+1. INSERT
+INSERT INTO <table-name> 
+[(<column-name>, <column-name>)]
+VALUES
+(<value>, <value>)
+
+-- 한 줄에 여러개 넣기
+
+INSERT INTO <table-name> [(<column-name>, <column-name>)]
+VALUES 
+(<value>, <value>),
+(<value>, <value>),
+(<value>, <value>)
+
+---
+2. SELECT
+SELECT 
+* 
+FROM 
+<table-name>
+
+SELECT <column-name>, [...<column-name>] 
+FROM 
+<table-name>
+
+
+
+

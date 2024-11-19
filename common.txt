@@ -1,0 +1,18 @@
+Everything is lower_snake_case
+
+-- 주석 --
+
+SHOW DATABASES; -- 데이터 베이스 조회
+
+USE <database-name>; -- 데이터 베이스 선택(접속)
+SELECT database(); -- 선택(접속)된 데이터 베이스 조회
+
+SHOW TABLES; -- 테이블 조회
+
+{-- 테이블 정보 상세 조회
+    SHOW COLUMNS FROM <table-name>; 
+    DESC <table-name>
+    DESCRIBE <table-name>
+}-- 테이블 정보 상세 조회
+
+

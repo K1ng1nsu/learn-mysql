@@ -1,0 +1,2 @@
+- Data Control Language
+데이터베이스에 대한 권한을 부여하거나 제거할 때 사용됩니다.

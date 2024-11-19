@@ -1,0 +1,2 @@
+- Transaction Control Language
+트랜잭션을 관리하며 데이터의 일관성을 유지합니다.
