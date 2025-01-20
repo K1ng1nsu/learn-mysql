@@ -32,6 +32,66 @@ SELECT <column-name>, [...<column-name>]
 FROM 
 <table-name>
 
+SELECT * 
+FROM
+<table-name>
+WHERE <column-name> >= 10
+
+### WHERE 절에서 사용하는 
+
+### ORDER BY 절
+
+### GROUP BY 절
+
+### HAVING 절
 
 
 
+
+
+3. UPDATE
+
+UPDATE <table-name>
+SET <column-name> = 
+WHERE <column-name> = 
+
+
+### safe mode 에서는 TEMPORARY TABLE 을 만들어서 수행
+
+CREATE TEMPORARY TABLE temp_cats AS
+SELECT *
+FROM cats
+WHERE name = 'Ringo';
+
+SELECT * FROM temp_cats;
+
+UPDATE cats
+SET breed = 'British Shorthair'
+WHERE cat_id IN (SELECT cat_id FROM temp_cats);
+
+DROP TABLE temp_cats;
+
+
+
+
+4. DELETE
+
+DELETE FROM <table-name>
+WHERE <column-name> = 
+
+
+### safe mode 에서는 TEMPORARY TABLE 을 만들어서 수행
+
+CREATE TEMPORARY TABLE temp_cats AS
+SELECT *
+FROM cats
+WHERE cat_id = age;
+
+SELECT * FROM temp_cats;
+
+DELETE FROM cats
+WHERE cat_id IN (SELECT cat_id FROM temp_cats);
+
+DROP table temp_cats;
+
+SELECT * FROM cats;

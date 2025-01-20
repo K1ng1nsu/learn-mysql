@@ -1,0 +1,4 @@
+데이터 베이스 조회
+
+SHOW DATABASES
+
