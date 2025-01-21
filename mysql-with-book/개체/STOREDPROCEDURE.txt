@@ -1,0 +1,28 @@
+### 스토어드 프로시저
+- 여러 개의 SQL문을 하나로 묶어서 편리하게 사용
+- 프로그래밍 언어에서 사용되는 연산식, 조건문, 반복문 사용가능
+
+
+### 스토어드 프로시저 생성
+- DELIMITER 뒤에 띄워쓰기 있어야함..
+
+DELIMITER //
+CREATE PROCEDURE 프로시저_이름()
+BEGIN
+    내용들
+    ex) 두 SQL문을 묶음
+    SELECT * FROM member WHERE member_name = '나훈아';
+    SELECT * FROM product WHERE product_name = '삼각김밥';
+END //
+DELIMITER ;
+
+
+### 스토어드 프로시저 사용
+
+CALL 프로시저_이름();
+
+
+
+### 스토어드 프로시저 삭제
+
+DROP 개체_종류 개체_이름
