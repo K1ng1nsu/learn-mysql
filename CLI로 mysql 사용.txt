@@ -3,3 +3,7 @@
 -MYSQL 접속
 mysql -u root -p
 
+
+- CLI 환경에서 sql 파일 적용 // 파일이 있는곳에서 MYSQL 접속 & 데이터베이스 선택 
+SOURCE 파일_이름.sql 
+
