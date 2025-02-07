@@ -23,23 +23,36 @@ VALUES
 
 ---
 2. SELECT
-SELECT 
-* 
-FROM 
-<table-name>
 
-SELECT <column-name>, [...<column-name>] 
-FROM 
-<table-name>
 
-SELECT * 
-FROM
-<table-name>
-WHERE <column-name> >= 10
+SELECT [DISTINCT]  <column-name>, [...<column-name>] 
+FROM <table-name>
+[JOIN ~]
+[WHERE  CONDITION]
+[GROUP BY <column-name>]
+[ HAVING CONDITION ]
+[ORDER BY <column-name> [DESC, ASCE], [...<column-name>] ]
+[LIMIT {[START_INDEX, NUM_OF_RECORD], [NUM_OF_RECORD]}   ]
 
-### WHERE 절에서 사용하는 
 
-### ORDER BY 절
+### DISTINCT
+SELECT DISTINCT author_fname, author_lname -- author_fname에만 DISTINCT가 적용되는게 아니라 풀네임에 DISTINCT가 적용됨됨
+FROM books;
+
+### WHERE 절에서 사용하는 연산자
+    - LIKE -> case-insensitive 함   엄격하게 하려면  => LIKE BINARY '%d%'   => Raymond
+        와일드 카드 % -> 0개 이상     David% -> David
+        언더스코어  _ -> 1개의 문자   ____ -> Neil, Dave 
+        와일드카드나 언더스코어 이스케이프 \     => '%\%%'
+        
+    - 
+
+
+
+
+
+
+
 
 ### GROUP BY 절
 
